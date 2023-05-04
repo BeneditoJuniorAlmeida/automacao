@@ -13,11 +13,6 @@ class Login{
       cy.get(el.senha).type(senha)
     }
 
-    preencherNome(nome = ""){
-      //preencher os campos
-      cy.get(el.usuario).type(nome)
-    }     
-
     Logar(){
       //clicar para cadastrar
       cy.get(el.btnLogar).click()
