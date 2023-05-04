@@ -4,8 +4,7 @@ pipeline{
     stages{
         stage("Testing"){
             steps{
-                sh "npm install"
-                sh "cypress install"
+                sh "npm install cypress --save-dev"
                 sh "npx cypress run"              
             }
         }
