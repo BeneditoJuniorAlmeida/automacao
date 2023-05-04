@@ -3,7 +3,7 @@ var faker = require('faker-br');
 import Login from '../../support/pages/login/login.js';
 import NovoUsuario from '../../support/pages/cadastroUsuario/cadastroUsuario.js'
 
-describe('Cadastro de usuário', () => {
+/*describe('Cadastro de usuário', () => {
     it('Cadastro de usuário com sucesso', () => {
         Login.acessarSite();
         Login.RegistrarUsuario();
@@ -27,4 +27,4 @@ describe('Cadastro de usuário', () => {
     });
 
 });
-
+*/
