@@ -27,7 +27,7 @@ describe('Teste logout', () => {
 
     it('Logout cancelado', () => {
         Login.acessarSite() // acessar site 
-        Login.preencherCamposLogin("teste3@gmail.com", "aaA@1A") //preencher campos
+        Login.preencherCamposLogin("automacaoUser@yahoo.com", "0!Aaaaa") //preencher campos
         Login.Logar()
 
         Logout.btnProfile()
