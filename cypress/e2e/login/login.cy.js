@@ -6,20 +6,13 @@ describe('Login', () => {
   it('Login bem-sucedido com credenciais corretas', () => {
 
     Login.acessarSite() // acessar site 
-    Login.preencherCamposLogin("teste3@gmail.com", "aaA@1A") //preencher campos
+    Login.preencherCamposLogin("automacaoUser@yahoo.com", "0!Aaaaa") //preencher campos
 
-    //criar uma rota e atribuir status code para uma variavel temporaria
-    cy.intercept('POST', 'https://web.voxdatati.com.br/voxsurvey-product/managerapi/Dashboard/', (req) => {
-      req.reply({
-        status: 200,
-      })
-    }).as('postLogin')
 
     //Clicar para salvar
     Login.Logar()
 
-    //esperar para fazer validação do status da requisição feita ao clicar para salvar
-    cy.wait('@postLogin').its('response.statusCode').should('eq', 200)
+    cy.url().should('be.equal', 'https://web.voxdatati.com.br/voxsurvey-product/Manager/main/dashboard')
 
   })
 

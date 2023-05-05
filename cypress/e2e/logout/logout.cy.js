@@ -6,7 +6,7 @@ describe('Teste logout', () => {
     it('Logout bem-sucedido', () => {
         // acessar site 
         Login.acessarSite()
-        Login.preencherCamposLogin("teste3@gmail.com", "aaA@1A") //preencher campos
+        Login.preencherCamposLogin("automacaoUser@yahoo.com", "0!Aaaaa") //preencher campos
         Login.Logar()
 
         //criar uma rota e atribuir status code para uma variavel temporaria
