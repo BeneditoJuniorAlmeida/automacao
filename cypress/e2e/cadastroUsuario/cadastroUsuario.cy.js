@@ -22,7 +22,7 @@ describe('Cadastro de usuário', () => {
         
         NovoUsuario.fecharModalSucess()
         
-          cy.url().should('be.equal', 'https://web.voxdatati.com.br/voxsurvey-product/Manager/')
+        cy.url().should('be.equal', 'https://web.voxdatati.com.br/voxsurvey-product/Manager/')
         
     });
 
