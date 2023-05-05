@@ -3,7 +3,7 @@ var faker = require('faker-br');
 import Login from '../../support/pages/login/login.js';
 import NovoUsuario from '../../support/pages/cadastroUsuario/cadastroUsuario.js'
 
-/*describe('Cadastro de usuário', () => {
+describe('Cadastro de usuário', () => {
     it('Cadastro de usuário com sucesso', () => {
         Login.acessarSite();
         Login.RegistrarUsuario();
@@ -20,11 +20,11 @@ import NovoUsuario from '../../support/pages/cadastroUsuario/cadastroUsuario.js'
             expect(alert).equal('Conta criada com sucesso')
           });
         
-        Login.acessarSite()
-        Login.preencherCamposLogin(email, '0!Aaaaa')
-        Login.Logar()
+        NovoUsuario.fecharModalSucess()
+        
+          cy.url().should('be.equal', 'https://web.voxdatati.com.br/voxsurvey-product/Manager/')
         
     });
 
 });
-*/
+

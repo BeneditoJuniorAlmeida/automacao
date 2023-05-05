@@ -18,6 +18,10 @@ class cadastroUsuario {
     voltarPaginaLogin(){
         cy.get(el.btnVoltarPagina).click()
     }
+
+    fecharModalSucess(){
+        cy.get(el.btnCloseModal).click()
+    }
 }
 
 export default new cadastroUsuario();

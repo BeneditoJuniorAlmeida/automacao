@@ -7,5 +7,6 @@ export const ELEMENTS = {
     inputRepitaSenha: '[data-test=input-register-repeatPassword]',
     btnCriarConta: '[data-test=btn-register-create]',
     btnJaTemConta: '[data-test=btn-register-login]',
+    btnCloseModal: '.swal2-close'
 
  }
