@@ -47,3 +47,7 @@ E eu deixo o campo de e-mail em branco
 E eu tento confirmar as alterações
 Então eu devo ver uma mensagem de erro informando que o campo de e-mail é obrigatório
 E o convite não deve ser editado
+
+depois de aceitar não pode Editar
+
+vai ter tempo de expirar
