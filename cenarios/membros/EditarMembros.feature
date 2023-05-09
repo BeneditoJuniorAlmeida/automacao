@@ -26,7 +26,7 @@ Quando eu clicar no botão de editar do convite
 Então um modal será exibido com os campos perfil e organização editáveis
 Quando eu tentar atualizar o perfil e organização
 Então não será possível editá-los
-E uma mensagem de erro será exibida informando que o convite com status aceito não pode ser editado.
+E uma mensagem de erro será exibida informando que o convite com status aceito não pode ser editado
 
 
 
