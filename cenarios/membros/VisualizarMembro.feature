@@ -1,8 +1,6 @@
 
 Funcionalidade: Visualização de convites e busca
 
-
-
 Cenário: Lista de membro sem convite 
 Dado que eu estou na página home
 Quando clico no menu lateral "Membros"
@@ -22,3 +20,4 @@ Dado que existem membros com convites na organização
 Quando eu faço uma busca pelo e-mail, organização, perfil ou situação do convite
 Então eu vejo o resultado da busca com o convite correspondente
 E vejo os botões de acordo com o status do convite.
+

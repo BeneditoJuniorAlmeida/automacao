@@ -1,6 +1,4 @@
 Funcionalidade: Cancelar convite de membro
-
-Contexto: Dado que estou na página de gerenciamento de membros da organização
           
 Cenário: Cancelar convite com status pendente
 Dado que um convite com status "pendente" foi enviado para o email "john@example.com"

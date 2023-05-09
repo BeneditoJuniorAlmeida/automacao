@@ -58,7 +58,7 @@ E clico no botão "Convidar"
 Então deve abrir um modal "Convidar membros para a organização"
 Quando eu preencho o campo de e-mail com um e-mail válido
 E eu não seleciono um perfil
-E eu deixo o campo de organização em branco
+E eu deixo o campo de organização como "Nenhum"
 E clico no botão "Enviar"
 Então eu devo ver uma mensagem de erro indicando que o campo perfil é obrigatório
 E o sistema não deve permitir enviar o convite
