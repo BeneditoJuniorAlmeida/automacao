@@ -2,6 +2,7 @@ Funcionalidade: Convidar membro
 
 Contexto: Dado que eu estou na página lista de membros
 
+@automatizar
 Cenário: Convidar membro com e-mail válido e novo no sistema
 E clico no botão "Convidar"
 Então deve abrir o modal "Convidar membros para a organização"

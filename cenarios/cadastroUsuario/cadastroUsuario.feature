@@ -2,6 +2,7 @@ Funcionalidade: Cadastro de usuário
 
 Contexto: Dado que o usuário não está registrado no sistema
 
+@automatizado
 Cenário: Cadastro de usuário com sucesso
 E o usuário preencher todos os campos corretamente com e-mail válido, nome, senha forte e a confirmação de senha correspondente
 Quando o usuário clicar no botão de "Criar conta"

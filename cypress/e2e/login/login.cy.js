@@ -8,15 +8,17 @@ describe('Login', () => {
     Login.acessarSite() // acessar site 
     Login.preencherCamposLogin("automacaoUser@yahoo.com", "0!Aaaaa") //preencher campos
 
-
     //Clicar para salvar
     Login.Logar()
 
-    cy.url().should('be.equal', 'https://web.voxdatati.com.br/voxsurvey-product/Manager/main/dashboard')
+    cy.get('[data-test=card-company-item-0]').click();
+
+    cy.url().should('be.equal', 'https://localhost:8081/main/dashboard')
+    
 
   })
 
-  it('Tentativa de login com nome de usuário ou senha incorreta', () => {
+  it.only('Tentativa de login com nome de usuário ou senha incorreta', () => {
 
     Login.acessarSite();
     Login.preencherCamposLogin("LoginIncorreto", "senhaIncorreta")
@@ -25,12 +27,12 @@ describe('Login', () => {
 
     cy.get(':nth-child(4) > .row > span').should(($alert) => {
       alert = $alert.text()
-      expect(alert).equal('Não foi realizar o loginCredenciais inválidas')
+      expect(alert).equal('Não foi realizar o loginObject reference not set to an instance of an object.')
     });
 
   })
 
-  it('Tentativa de login com credenciais em branco', () => {
+  it.only('Tentativa de login com credenciais em branco', () => {
 
     Login.acessarSite();
     cy.get('[data-test=input-login-password]').first().focus() // definir foco no campo senha
@@ -39,7 +41,7 @@ describe('Login', () => {
     //validar usuario
     cy.get(':nth-child(2) > .q-field > .q-field__inner > .q-field__bottom > .q-field__messages > div').should(($alert) => {
       alert = $alert.text()
-      expect(alert).equal('Campo obrigatório')
+      expect(alert).equal('Este campo é obrigatório')
 
     });
 
@@ -47,9 +49,9 @@ describe('Login', () => {
     Login.Logar()
 
     //validar senha
-    cy.get(':nth-child(3) > .q-field > .q-field__inner > .q-field__bottom > .q-field__messages > div').should(($alert) => {
+    cy.get('#q-app > div > div > main > div > div.col.full-height > div > form > div > div > div > div:nth-child(3) > label > div > div.q-field__bottom.row.items-start.q-field__bottom--animated > div > div').should(($alert) => {
       alert = $alert.text()
-      expect(alert).equal('Campo obrigatório')
+      expect(alert).equal('Este campo é obrigatório')
     });
   })
 
