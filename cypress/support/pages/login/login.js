@@ -4,8 +4,8 @@ const el = require('./elementos').ELEMENTS
 
 class Login {
   acessarSite() {
-    // cy.visit('https://web.voxdatati.com.br/voxsurvey-product/Manager/')
-    cy.visit('https://localhost:8081/')
+    cy.visit('https://web.voxdatati.com.br/voxsurvey-product/Manager/')
+   // cy.visit('https://localhost:8081/')
   }
 
   preencherCamposLogin(nome = "", senha = "") {
