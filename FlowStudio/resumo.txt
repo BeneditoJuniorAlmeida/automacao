@@ -1,0 +1,49 @@
+- Criar configuração de modo de edição de fluxo 
+    - Cadastra parâmetro na tParameter
+        - No carregamento do fluxo bloquear ou não para edição de outras pessoas baseado nessa configuração (restritivo ou livre)
+
+    - Alterar consulta de lista de flows para ser exibida assim que entrar na tela
+        - Nome
+        - Bloqueado (Cadeado)(front usar cor)
+        - Tipo
+        - Versão real do fluxo (Não publicado)
+        - Ultima pessoa que salvou 
+        - Ultima pessoa que publicou
+        - Ações
+            -Renomear
+            -Copiar
+            -Desbloquear
+                - Adicionar ao botão de ações na lista de flows a opção de desbloquear o fluxo
+                    - Admin master pode desbloquer um fluxo bloqueado por outro usuário
+                     - No botão de ação de "liberar fluxo" onde um agente específico dentro da lista de usuários no detalhe do fluxo
+                    - Opção de liberar o fluxo manualmente
+                    - Opção de fechar e liberar o fluxo, ao salvar e publicar
+            -Informações
+                - Adicionar ao botão de ações na lista de flows a opção informações
+                    - Ultima data salvo
+                    - Ultima data publicada
+                    - Ultimo usuário que salvou 
+                    - Ultima usuário que publicou 
+                    - Nome 
+                    - Versão 
+                    - Tipo
+                    - Se está bloqueado
+                    - Lista de usuários que estão editando 
+                    - Histórico de versões publicadas 
+                    - Observações
+
+    - Alterar consulta de lista de flows para informar se o fluxo está bloqueado (Cadeado)
+
+    - Dentro do fluxo exibir a versão real do fluxo
+        - Possibilitar o carregamento de uma versão anterior  (sempre visualização)
+        - Botão para habilitar edição da versão anterior (avisar tanto na habilitação quanto no salvamento que o atual será sobrescrito)
+
+    - Incluir versão do save do fluxo para que uma pessoa veja que foi salvo uma versão mais atual da dele aberta 
+
+    - So permitir publicação de fluxos com versão do save maior do que da publicada 
+    - Tratar save de versão aberta anterior com uma versão de save superior (realizada por outra pessoa no mesmo fluxo) 
+        - Opção para sobrescrever, carregar(descartar) ou cancelar ao salvar (similar edição de arquivo)
+        - Caso escolhido carregar confirmar que será perdido as alterações realizadas
+
+    - Exportar e importar fluxos via arquivo
+        - Corrigir clonagem de fluxos tipo URA
