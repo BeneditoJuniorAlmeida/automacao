@@ -10,12 +10,17 @@ Então deve abrir uma tela na lateral direita do sistema para inserir nome e des
 
 Cenário: Adicionar aplicação com nome e descrição válidos
 Dado que estou na página de adicionar aplicação
-Quando preencho o campo nome com "Minha Aplicação"
+Quando preencho o campo nome com "Minha_Aplicação"
 E preencho o campo descrição com "Uma aplicação de teste"
 E clico no botão "Salvar"
-Então a aplicação "Minha Aplicação" é adicionada com sucesso
+Então a aplicação "Minha_Aplicação" é adicionada com sucesso
 E o sistema deve exibir uma mensagem indicando que a aplicação foi cadastrada com sucesso
-E o sistema deve exibir a aplicação cadastrada
+
+Cenário: Tentar adicionar aplicação com nome contendo espaços
+Dado que estou na página de adicionar aplicação
+E preencho o campo "Nome" com "Minha Aplicacao"
+Quando clico no botão "Salvar"
+Então o sistema deve exibir uma mensagem de erro
 
 Cenário: Adicionar aplicação com nome vazio
 Dado que estou na página de adicionar aplicação
@@ -26,7 +31,7 @@ Então vejo uma mensagem de erro informando que o campo nome é obrigatório
 
 Cenário: Adicionar aplicação sem preencher descrição
 Dado que estou na página de adicionar aplicação
-Quando preencho o campo nome com "Minha Aplicação"
+Quando preencho o campo nome com "Minha_Aplicação"
 E deixo o campo descrição vazio
 E clico no botão salvar
 Então a aplicação "Minha Aplicação" é adicionada com sucesso, sem descrição
@@ -34,7 +39,7 @@ E o sistema deve exibir uma mensagem indicando que a aplicação foi cadastrada 
 
 Cenário: Cancelar a adição de uma aplicação
 Dado que estou na página de adicionar aplicação
-Quando preencho o campo nome com "Minha Aplicação"
+Quando preencho o campo nome com "Minha_Aplicação"
 E preencho o campo descrição com "Uma aplicação de teste"
 E clico no botão "Cancelar"
 Então volto para a lista de aplicações sem adicionar uma nova aplicação
