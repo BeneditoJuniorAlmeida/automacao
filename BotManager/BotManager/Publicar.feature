@@ -1,4 +1,4 @@
-Funcionalidade: Publicar um bot
+Funcionalidade: Publicar Bot
 
 Cenário: Publicar um bot com sucesso
 Dado que estou logado como um administrador do sistema

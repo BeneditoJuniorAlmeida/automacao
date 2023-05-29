@@ -1,7 +1,5 @@
 Funcionalidade: Excluir intenção
 
-Contexto:
-
 Cenário: Confirmar exclusão de intenção
 Dado que acesso uma aplicação
 E estou dentro da tela de "Intenções"

@@ -1,4 +1,4 @@
-Funcionalidade: Busca de um bot
+Funcionalidade: Buscar bot
 
 Cenário: Buscar bot existente com termo válido
 Dado que estou na página de busca de bots

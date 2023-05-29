@@ -1,4 +1,4 @@
-Funcionalidade: Deletar um bot
+Funcionalidade: Deletar Bot
 
 Cenário: Deletar um bot não publicado com sucesso
 Dado que estou logado como um administrador do sistema
